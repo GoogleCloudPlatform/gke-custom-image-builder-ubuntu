@@ -51,6 +51,7 @@ This template assumes you have a Packer container image available in your Artifa
 
     *   **`scripts/ubuntu/customize_ubuntu.pkr.hcl`:** This is the main Packer template. Modify the `provisioner` blocks to add your desired customizations.
     *   **`scripts/ubuntu/`:** Add any shell scripts referenced by your Packer template in this directory.
+    *   **`main.tf`:** Add new resource blocks for your new shell scripts, so that the scripts can be uploaded to the GCS bucket by `terraform apply`.
 
 3.  **Deploy the Pipeline**
 
